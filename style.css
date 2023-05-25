@@ -14,9 +14,11 @@
 }
 
 body {
-    height: 100dvh;
-    display: grid;
-    place-items: center;
+    height: 100vh;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: linear-gradient(135deg, var(--clr-purple), var(--clr-pink));
 }
 
