@@ -15,27 +15,28 @@
 
 body {
     height: 100vh;
-    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     background: linear-gradient(135deg, var(--clr-purple), var(--clr-pink));
+    background-size: 100% 100%;
 }
 
 .container {
     width: min(600px, 90vw);
-    height: 90dvh;
-    min-height: 500px;
+    height: 90vh;
+    min-height: 400px;
+    max-height: 90vh;
     display: flex;
     flex-direction: column;
     gap: 1rem;
     background-color: #fff;
     padding: 1rem;
-    border-radius: 0.8rem;
-    -webkit-border-radius: 0.8rem;
-    -moz-border-radius: 0.8rem;
-    -ms-border-radius: 0.8rem;
-    -o-border-radius: 0.8rem;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
     box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
     transition: all 0.2s;
     -webkit-transition: all 0.2s;
@@ -84,6 +85,7 @@ body {
 
 .todo__list {
     height: 100%;
+    max-height: 100%;
     display: flex;
     padding: 0.5rem;
     flex-direction: column;
